@@ -1,10 +1,10 @@
 CC      = gcc
 CFLAGS  = -Wall -Wextra -g
-TARGET  = osh
+TARGET  = shell
 
 all: $(TARGET)
 
-$(TARGET): osh.c
+$(TARGET): shell.c
 	$(CC) $(CFLAGS) -o $@ $<
 
 run: $(TARGET)
